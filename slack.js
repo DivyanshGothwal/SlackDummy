@@ -7,7 +7,7 @@ let namespaces = require('./data/namespaces');
 app.use(express.static(__dirname + '/public'));
 
 const port = process.env.PORT || 9000;
-const expressServer = app.listen(port, () => {
+const expressServer = app.listen(port, (err) => {
     if (err) {
         console.log(err);
     }
