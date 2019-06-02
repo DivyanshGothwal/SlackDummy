@@ -1,6 +1,6 @@
 const username = prompt("What is your username?")
 // const socket = io('http://localhost:9000'); // the / namespace/endpoint
-const port = 9000;
+const port = process.env.PORT || 9000;
 const hostName = `http://localhost:${port}`;
 const socket = io(hostName);
 let nsSocket = null;
